@@ -1,0 +1,134 @@
+/* Здесь вы напишете основную часть стилей страницы.
+
+Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
+✦ like-icon — для svg-иконки анимированного сердца
+✦ card__like-button — для кнопки Like рядом с иконкой
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
+✦ button__text — для обозначения текстового элемента внутри кнопки
+
+*/
+
+.page {
+  display: flex;
+  min-inline-size: 320px;
+  min-block-size: 100dvb;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+}
+
+.header {
+  display: flex;
+  width: 696px;
+  height: 368px;
+  background-color: #fff;
+  border: 3px solid #000;
+  margin: 100px 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'PressStart2P', monospace;
+  text-transform: uppercase;
+}
+
+.header__item-title {
+  font-size: 65px;
+  margin-bottom: 20px;
+}
+
+.header__item-subtitle {
+  font-size: 23px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section {
+  background-color: #fff;
+  border: 3px solid #000;
+  margin-bottom: 50px;
+  width: 696px;
+}
+
+.title-of-item {
+  line-height: 31px;
+  width: 696px;
+  padding-left: 10px;
+  font-family: 'Inter', monospace;
+  font: 700;
+  font-size: 18px;
+}
+
+.text-in-item {
+  font-size: 18px;
+  margin: 25px;
+}
+
+.item-text {
+  font-family: 'Inter';
+  margin-bottom: 27px;
+}
+
+.item-subtext {
+  font-family: 'Inter';
+  margin: 0;
+  padding-left: 25px;
+}
+
+.btn-cont{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.card__like-button {
+  font-family: 'PressStart2P';
+  font-size: 14px;;
+  width: 130px;
+  height: 38px;
+  background-color: transparent;
+  margin: 25px;
+}
+
+.card__like-button:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card__like-button:focus-visible {
+  box-shadow: 2px 2px 0 0 black;
+}
+
+.image-in-item {
+  display: flex;
+  justify-content: start;
+  width: 696px;
+  height: 696px;
+  margin-left: -2px;
+}
+
+.section-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 335px;
+  height: 55px;
+  border: 3px solid #000;
+  background-color: #fff;
+  margin-bottom: 103px;
+}
+
+.save__link {
+  font-family: 'PressStart2P';
+  font-size: 14px;
+}
