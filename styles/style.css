@@ -108,7 +108,8 @@
 }
 
 .card__like-button:focus-visible {
-  box-shadow: 2px 2px black;
+  outline: none;
+  box-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .image-container {
@@ -122,6 +123,34 @@
   width: 696px;
   height: 696px;
   margin-left: -2px;
+}
+
+.image-in-item-second {
+  filter: blur(0.4);
+}
+
+.image-in-item-third {
+  filter: contrast(0.6);
+}
+
+.image-in-item-fourth {
+  filter: saturate(200%);
+}
+
+.image-in-item-fifth {
+  filter: grayscale(0.75);
+}
+
+.image-in-item-sixth {
+  filter: brightness(110%);
+}
+
+.image-in-item-seventh {
+  filter: invert(0.7);
+}
+
+.image-in-item-eighth {
+  filter: sepia(0.8);
 }
 
 .image-label {
