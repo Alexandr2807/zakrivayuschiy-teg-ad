@@ -14,7 +14,7 @@
   display: flex;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   background-color: white;
@@ -106,7 +106,12 @@
 }
 
 .card__like-button:focus-visible {
-  box-shadow: 2px 2px 0 0 black;
+  box-shadow: 2px 2px black;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
 }
 
 .image-in-item {
@@ -115,6 +120,31 @@
   width: 696px;
   height: 696px;
   margin-left: -2px;
+}
+
+.image-label {
+  display: flex;
+  justify-self: flex-end;
+  align-self: flex-start;
+  position: absolute;
+  font-family: 'PressStart2P', monospace;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  margin-right: 25px;
+  margin-top: 25px;
+  color: #000;
+  opacity: 0.5;
+  text-shadow: 
+    -1px -1px 0 white,
+     1px -1px 0 white,
+    -1px  1px 0 white,
+     1px  1px 0 white;
+}
+
+.image-label-lowercase {
+  text-transform: lowercase;
 }
 
 .section-link {
@@ -131,4 +161,23 @@
 .save__link {
   font-family: 'PressStart2P';
   font-size: 14px;
+}
+
+@media(max-width <= 375px) {
+  .page {
+    width: 375px;
+  }
+  
+  .header {
+    width: 100%;
+    height: 327px;
+  }
+
+  .header__item-title {
+    font-size: 49px;
+  }
+
+  .header__item-subtitle {
+    font-size: 14px;
+  }
 }
