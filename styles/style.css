@@ -17,8 +17,8 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  background-color: white;
-  background-image: url(../images/background.png);
+  background-color: var(--background-color);
+  background-image: var(--background-image);
   background-repeat: no-repeat;
 }
 
@@ -26,13 +26,13 @@
   display: flex;
   width: 696px;
   height: 368px;
-  background-color: #fff;
+  background-color: var(--background-color);
   border: 3px solid #000;
   margin: 100px 0;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: 'PressStart2P', monospace;
+  font-family: var(--accent-font), sans-serif;
   text-transform: uppercase;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .section {
-  background-color: #fff;
+  background-color: var(--background-color);
   border: 3px solid #000;
   margin-bottom: 50px;
   width: 696px;
@@ -63,8 +63,8 @@
   line-height: 31px;
   width: 696px;
   padding-left: 10px;
-  font-family: 'Inter', sans-serif;
-  font-variation-settings: 'wght' 700;
+  font-family: var(--main-font), sans-serif;
+  font-variation-settings: 'wght' var(--card-title-font-weight);
   font-size: 18px;
 }
 
@@ -74,14 +74,14 @@
 }
 
 .item-text {
-  font-family: 'Inter';
-  font-variation-settings: 'wght' 400;
+  font-family: var(--main-font), sans-serif;
+  font-variation-settings: 'wght' var(--card-text-font-weight);
   margin-bottom: 27px;
 }
 
 .item-subtext {
-  font-family: 'Inter';
-  font-variation-settings: 'wght' 400;
+  font-family: var(--main-font), sans-serif;
+  font-variation-settings: 'wght' var(--card-text-font-weight);
   margin: 0;
   padding-left: 25px;
 }
@@ -101,8 +101,8 @@
   margin: 25px;
 }
 
-.card__like-button:hover {
-  background-color: #000;
+.card__like-button:hover { /* надо анимацию сделать */
+  background-color: var(--accent-color);
   color: #fff;
   cursor: pointer;
 }
@@ -129,10 +129,10 @@
   justify-self: flex-end;
   align-self: flex-start;
   position: absolute;
-  font-family: 'PressStart2P', monospace;
+  font-family: var(--accent-font), sans-serif;
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: var(--card-text-font-weight);
   line-height: 100%;
   margin-right: 25px;
   margin-top: 25px;
@@ -156,12 +156,12 @@
   width: 335px;
   height: 55px;
   border: 3px solid #000;
-  background-color: #fff;
+  background-color: var(--background-color);
   margin-bottom: 103px;
 }
 
 .save__link {
-  font-family: 'PressStart2P';
+  font-family: var(--accent-font), sans-serif;
   font-size: 14px;
 }
 
