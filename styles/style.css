@@ -63,8 +63,8 @@
   line-height: 31px;
   width: 696px;
   padding-left: 10px;
-  font-family: 'Inter', monospace;
-  font: 700;
+  font-family: 'Inter', sans-serif;
+  font-variation-settings: 'wght' 700;
   font-size: 18px;
 }
 
@@ -75,11 +75,13 @@
 
 .item-text {
   font-family: 'Inter';
+  font-variation-settings: 'wght' 400;
   margin-bottom: 27px;
 }
 
 .item-subtext {
   font-family: 'Inter';
+  font-variation-settings: 'wght' 400;
   margin: 0;
   padding-left: 25px;
 }
