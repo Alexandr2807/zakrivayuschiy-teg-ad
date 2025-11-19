@@ -4,9 +4,9 @@
   --accent-font: 'PressStart2P';
   --card-title-font-weight: 700;
   --card-text-font-weight: 400;
-  --background-color: #FFF;
+  --background-color: #fff;
   --accent-color: #000;
   --background-image: url(../images/background.png);
-  --contour-color: var(--accent-color);
+  --contour-color: #000;
   --filling-color: #FF0000;
 }
