@@ -7,6 +7,6 @@
   --background-color: #fff;
   --accent-color: #000;
   --background-image: url(../images/background.png);
-  --contour-color: #000;
-  --filling-color: #FF0000;
+  --border-color: #000;
+  --fill-color: #FF0000;
 }
