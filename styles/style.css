@@ -90,6 +90,24 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  margin-bottom: 25px;
+  margin-right: 25px;
+  margin-top: 27px;
+}
+
+.card__icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  margin-right: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.card__icon-button:hover {
+  outline: none;
 }
 
 .card__like-button {
@@ -98,13 +116,7 @@
   width: 130px;
   height: 38px;
   background-color: transparent;
-  margin: 25px;
-}
-
-.card__like-button:hover { /* надо анимацию сделать */
-  background-color: var(--accent-color);
-  color: #fff;
-  cursor: pointer;
+  margin-left: 12px;
 }
 
 .card__like-button:focus-visible {
@@ -192,6 +204,13 @@
 .save__link {
   font-family: var(--accent-font), sans-serif;
   font-size: 14px;
+  margin-left: 0;
+}
+
+.floppy-icon {
+  width: 21px;
+  height: 21px;
+  margin: 15px 8px 19px;
 }
 
 @media(max-width <= 375px) {
