@@ -84,7 +84,7 @@
   padding-left: 25px;
 }
 
-.btn-cont{
+.btn-cont {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -92,7 +92,7 @@
 
 .card__like-button {
   font-family: 'PressStart2P';
-  font-size: 14px;;
+  font-size: 14px;
   width: 130px;
   height: 38px;
   background-color: transparent;
