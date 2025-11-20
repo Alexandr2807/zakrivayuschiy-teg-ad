@@ -117,6 +117,7 @@
   height: 38px;
   background-color: transparent;
   margin-left: 12px;
+  z-index: 1;
 }
 
 .card__like-button:focus-visible {
@@ -184,6 +185,7 @@
      1px -1px 0 white,
     -1px  1px 0 white,
      1px  1px 0 white;
+  z-index: 1;
 }
 
 .image-label-lowercase {
@@ -211,6 +213,81 @@
   width: 21px;
   height: 21px;
   margin: 15px 8px 19px;
+}
+
+.button {
+  background-color: var(--background-color);
+  position: relative;
+  cursor: pointer;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--accent-color);
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: left;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button__text {
+  font-family: var(--accent-font);
+  font-size: 14px;
+  z-index: 2;
+}
+
+.popup {
+  width: 357px;
+  height: 193px;
+}
+
+.popup[open] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup__text {
+  width: 234px;
+  height: 63px;
+  text-transform: uppercase;
+}
+
+.popup__content {
+  display: flex;
+  flex-direction: row;
+  font-family: var(--accent-font);
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 30px;
+  line-height: 150%;
+}
+
+.save-floppy {
+  width: 39px;
+  z-index: 2;
+}
+
+.button-form {
+  width: 293px;
+  height: 38px;
+}
+
+.popup::backdrop {
+  opacity: 0.75;
+  background-color: var(--accent-color);
 }
 
 @media(max-width <= 375px) {
