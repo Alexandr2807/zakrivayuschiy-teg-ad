@@ -416,12 +416,30 @@
           </button>
         </div>
       </section>
-      <button class="button section-link">
+      <button class="button section-link" 
+          onclick="window['modal'].showModal()"
+          aria-controls="modal">
         <svg class="floppy-icon">
           <use href="./svg/floppy.svg"></use>
         </svg>
-        <span class="save__link">Сохранить на память</span>
+        <span class="button__text">Сохранить на память</span>
       </button>
+      <dialog id="modal" class="popup">
+        <div class="popup__content">
+          <svg class="floppy-icon save-floppy">
+            <use href="./svg/floppy.svg"></use>
+          </svg>
+          <p class="popup__text">Вставьте дискету, чтобы продолжить</p>
+        </div>
+        <form method="dialog" class="form">
+          <button
+            class="button button-form"
+            type="submit"
+          >
+            <span class="button__text">ок</span>
+          </button>
+        </form>
+      </dialog>
     </main>
     <script src="./scripts/like.js"></script>
   </body>
