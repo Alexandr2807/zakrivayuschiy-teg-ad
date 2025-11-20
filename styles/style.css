@@ -139,31 +139,31 @@
 }
 
 .image-in-item-second {
-  filter: blur(0.4);
+  filter: blur(0.4px) hue-rotate(30deg);
 }
 
 .image-in-item-third {
-  filter: contrast(0.6);
+  filter: contrast(0.6) saturate(150%);
 }
 
 .image-in-item-fourth {
-  filter: saturate(200%);
+  filter: saturate(200%) brightness(90%);
 }
 
 .image-in-item-fifth {
-  filter: grayscale(0.75);
+  filter: grayscale(0.75) contrast(120%);
 }
 
 .image-in-item-sixth {
-  filter: brightness(110%);
+  filter: brightness(110%) sepia(0.3);
 }
 
 .image-in-item-seventh {
-  filter: invert(0.7);
+  filter: invert(0.7) blur(0.3px);
 }
 
 .image-in-item-eighth {
-  filter: sepia(0.8);
+  filter: sepia(0.8) hue-rotate(45deg);
 }
 
 .image-label {
