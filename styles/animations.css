@@ -7,38 +7,7 @@
 ✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
-
 */
-
-.button {
-  background-color: var(--background-color);
-  position: relative;
-  cursor: pointer;
-}
-
-.button::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: var(--accent-color);
-  transform: scaleX(0);
-  transition: transform 0.5s ease-in-out;
-  transform-origin: left;
-}
-
-.button:hover {
-  cursor: pointer;
-}
-
-.button-text:hover {
-  color: white;
-}
-
-.button:hover::before {
-  transform: scaleX(1);
-}
-  
-
 
 .contour {
   transition: fill 0.1s linear;
