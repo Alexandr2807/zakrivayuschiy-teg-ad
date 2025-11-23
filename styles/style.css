@@ -15,11 +15,10 @@
         -webkit-text-stroke: 1px #fff;
         text-stroke: 1px #fff;
         color: transparent;
-        text-shadow: none; /* Убираем тень, так как используем обводку */
+        text-shadow: none;
     }
 }
 
-/* Фолбек для браузеров без поддержки text-stroke */
 @supports not ((-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff)) {
     .image-label {
         text-shadow: 
