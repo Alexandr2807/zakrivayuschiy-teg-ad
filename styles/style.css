@@ -237,7 +237,6 @@
 
 .button {
   position: relative;
-  background-color: var(--background-color);
   cursor: pointer;
   background-color: transparent;
   transition: box-shadow 0.3s ease;
