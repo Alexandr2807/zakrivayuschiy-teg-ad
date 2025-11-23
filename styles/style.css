@@ -13,7 +13,7 @@
 @supports ((-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff)) {
     .image-label {
         -webkit-text-stroke: 1px #fff;
-        -webkit-text-stroke: 1px #fff;
+        text-stroke: 1px #fff;
         color: transparent;
         text-shadow: none; /* Убираем тень, так как используем обводку */
     }
