@@ -204,9 +204,9 @@
 }
 
 .save__link {
+  margin-left: 0;
   font-family: var(--accent-font), sans-serif;
   font-size: 14px;
-  margin-left: 0;
 }
 
 .floppy-icon {
@@ -216,18 +216,19 @@
 }
 
 .button {
-  background-color: var(--background-color);
   position: relative;
+  background-color: var(--background-color);
   cursor: pointer;
 }
 
 .button::before {
-  content: "";
   position: absolute;
   inset: 0;
+  content: "";
   background-color: var(--accent-color);
   transform: scaleX(0);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  color: var(--background-color);
   transform-origin: left;
 }
 
@@ -243,7 +244,6 @@
 .button__text {
   font-family: var(--accent-font);
   font-size: 14px;
-  z-index: 2;
 }
 
 .popup {
@@ -291,12 +291,8 @@
 }
 
 @media(max-width <= 375px) {
-  .page {
-    width: 375px;
-  }
-  
   .header {
-    width: 100%;
+    width: 375px;
     height: 327px;
   }
 
@@ -306,5 +302,29 @@
 
   .header__item-subtitle {
     font-size: 14px;
+  }
+
+  .section {
+    width: 375px;
+  }
+
+  .text-in-item {
+    font-size: 18px;
+  }
+
+  .title-of-item {
+    font-size: 18px;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: column;
+    width: 306px;
+    height: 84px;
+  }
+  
+  .popup[open] {
+    width: 341px;
+    height: 191px;
   }
 }
