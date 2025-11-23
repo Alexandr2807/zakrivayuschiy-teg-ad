@@ -26,6 +26,10 @@ li {
   padding: 0;
 }
 
+span {
+  z-index: 11;
+}
+
 a {
   color: inherit;
 }
