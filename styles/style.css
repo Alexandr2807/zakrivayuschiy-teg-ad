@@ -10,6 +10,26 @@
 
 */
 
+@supports ((-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff)) {
+    .image-label {
+        -webkit-text-stroke: 1px #fff;
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        text-shadow: none; /* Убираем тень, так как используем обводку */
+    }
+}
+
+/* Фолбек для браузеров без поддержки text-stroke */
+@supports not ((-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff)) {
+    .image-label {
+        text-shadow: 
+            -1px -1px 0 #fff,
+            1px -1px 0 #fff,
+            -1px 1px 0 #fff,
+            1px 1px 0 #fff;
+    }
+}
+
 .page {
   display: flex;
   min-inline-size: 320px;
