@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
+    <link rel="icon" href="../images/favicon.ico" sizes="any">
+    <link rel="icon" href="../svg/favicon.svg" type="image/svg">
+    <link rel="apple-touch-icon" href="../images/favicon.png">
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
-  <body class="page">
+  <body class="page" id="page">
     <header class="header">
       <h1 class="header__item-title">&lt;/html&gt;</h1>
       <h2 class="header__item-subtitle">Закрывающий тег</h2>
@@ -30,7 +33,6 @@
               class="like-icon"
               width="39"
               height="36"
-              viewBox="0 0 39 36"
               xmlns="http://www.w3.org/2000/svg">
               <g class="heart">
                 <path
@@ -80,7 +82,6 @@
               class="like-icon"
               width="39"
               height="36"
-              viewBox="0 0 39 36"
               xmlns="http://www.w3.org/2000/svg">
               <g class="heart">
                 <path
@@ -130,7 +131,6 @@
               class="like-icon"
               width="39"
               height="36"
-              viewBox="0 0 39 36"
               xmlns="http://www.w3.org/2000/svg">
               <g class="heart">
                 <path
@@ -180,7 +180,6 @@
               class="like-icon"
               width="39"
               height="36"
-              viewBox="0 0 39 36"
               xmlns="http://www.w3.org/2000/svg">
               <g class="heart">
                 <path
@@ -230,7 +229,6 @@
               class="like-icon"
               width="39"
               height="36"
-              viewBox="0 0 39 36"
               xmlns="http://www.w3.org/2000/svg">
               <g class="heart">
                 <path
@@ -280,7 +278,6 @@
               class="like-icon"
               width="39"
               height="36"
-              viewBox="0 0 39 36"
               xmlns="http://www.w3.org/2000/svg">
               <g class="heart">
                 <path
@@ -330,7 +327,6 @@
               class="like-icon"
               width="39"
               height="36"
-              viewBox="0 0 39 36"
               xmlns="http://www.w3.org/2000/svg">
               <g class="heart">
                 <path
@@ -380,7 +376,6 @@
               class="like-icon"
               width="39"
               height="36"
-              viewBox="0 0 39 36"
               xmlns="http://www.w3.org/2000/svg">
               <g class="heart">
                 <path
@@ -417,14 +412,14 @@
         </div>
       </section>
       <button class="button section-link" 
-          onclick="window['modal'].showModal()"
-          aria-controls="modal">
+          onclick="window['popup'].showModal()"
+      >
         <svg class="floppy-icon">
           <use href="./svg/floppy.svg"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
-      <dialog id="modal" class="popup">
+      <dialog id="popup" class="popup">
         <div class="popup__content">
           <svg class="floppy-icon save-floppy">
             <use href="./svg/floppy.svg"></use>
@@ -435,8 +430,9 @@
           <button
             class="button button-form"
             type="submit"
+            onclick="window['page'].showModal()"
           >
-            <span class="button__text">ок</span>
+            <span class="button__text button__text-popup">ok</span>
           </button>
         </form>
       </dialog>
