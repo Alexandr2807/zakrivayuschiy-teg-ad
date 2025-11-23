@@ -135,9 +135,7 @@
   font-size: 14px;
   width: 130px;
   height: 38px;
-  background-color: transparent;
   margin-left: 12px;
-  z-index: 1;
 }
 
 .card__like-button:focus-visible {
@@ -233,12 +231,16 @@
   width: 21px;
   height: 21px;
   margin: 15px 8px 19px;
+  color: var(--background-color);
+  transition: color 1s ease;
 }
 
 .button {
   position: relative;
   background-color: var(--background-color);
   cursor: pointer;
+  background-color: transparent;
+  transition: box-shadow 0.3s ease;
 }
 
 .button::before {
@@ -254,16 +256,24 @@
 
 .button:hover {
   cursor: pointer;
-  color: white;
+  color: var(--background-color);
+  z-index: 2;
 }
 
 .button:hover::before {
   transform: scaleX(1);
+  color: white;
+  z-index: 2;
 }
 
 .button__text {
   font-family: var(--accent-font);
   font-size: 14px;
+  z-index: 10;
+}
+
+.button__text-popup {
+  text-transform: uppercase;
 }
 
 .popup {
